@@ -1,0 +1,153 @@
+{
+  "format-version" : 2,
+  "table-uuid" : "f2f6aaca-141e-41d8-9e67-691962f3c861",
+  "location" : "file:///D:/Finance_Fraud_Detection/iceberg_warehouse/db/fraud_transactions",
+  "last-sequence-number" : 2,
+  "last-updated-ms" : 1776514160103,
+  "last-column-id" : 11,
+  "current-schema-id" : 0,
+  "schemas" : [ {
+    "type" : "struct",
+    "schema-id" : 0,
+    "fields" : [ {
+      "id" : 1,
+      "name" : "step",
+      "required" : false,
+      "type" : "int"
+    }, {
+      "id" : 2,
+      "name" : "type",
+      "required" : false,
+      "type" : "string"
+    }, {
+      "id" : 3,
+      "name" : "amount",
+      "required" : false,
+      "type" : "double"
+    }, {
+      "id" : 4,
+      "name" : "nameOrig",
+      "required" : false,
+      "type" : "string"
+    }, {
+      "id" : 5,
+      "name" : "oldbalanceOrg",
+      "required" : false,
+      "type" : "double"
+    }, {
+      "id" : 6,
+      "name" : "newbalanceOrig",
+      "required" : false,
+      "type" : "double"
+    }, {
+      "id" : 7,
+      "name" : "nameDest",
+      "required" : false,
+      "type" : "string"
+    }, {
+      "id" : 8,
+      "name" : "oldbalanceDest",
+      "required" : false,
+      "type" : "double"
+    }, {
+      "id" : 9,
+      "name" : "newbalanceDest",
+      "required" : false,
+      "type" : "double"
+    }, {
+      "id" : 10,
+      "name" : "isFraud",
+      "required" : false,
+      "type" : "int"
+    }, {
+      "id" : 11,
+      "name" : "rule_fraud",
+      "required" : false,
+      "type" : "boolean"
+    } ]
+  } ],
+  "default-spec-id" : 0,
+  "partition-specs" : [ {
+    "spec-id" : 0,
+    "fields" : [ ]
+  } ],
+  "last-partition-id" : 999,
+  "default-sort-order-id" : 0,
+  "sort-orders" : [ {
+    "order-id" : 0,
+    "fields" : [ ]
+  } ],
+  "properties" : {
+    "owner" : "rsanj",
+    "write.parquet.compression-codec" : "zstd"
+  },
+  "current-snapshot-id" : 4886759124782175681,
+  "refs" : {
+    "main" : {
+      "snapshot-id" : 4886759124782175681,
+      "type" : "branch"
+    }
+  },
+  "snapshots" : [ {
+    "sequence-number" : 1,
+    "snapshot-id" : 3050500731298829093,
+    "timestamp-ms" : 1776502189595,
+    "summary" : {
+      "operation" : "append",
+      "spark.app.id" : "local-1776499809098",
+      "spark.sql.streaming.epochId" : "3",
+      "spark.sql.streaming.queryId" : "03483a22-25ee-45f8-9375-f5d31189ca8f",
+      "added-data-files" : "1",
+      "added-records" : "20",
+      "added-files-size" : "4180",
+      "changed-partition-count" : "1",
+      "total-records" : "20",
+      "total-files-size" : "4180",
+      "total-data-files" : "1",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "file:/D:/Finance_Fraud_Detection/iceberg_warehouse/db/fraud_transactions/metadata/snap-3050500731298829093-1-a0d2a212-8f1a-43e3-888f-1eba2f7ef9e1.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 2,
+    "snapshot-id" : 4886759124782175681,
+    "parent-snapshot-id" : 3050500731298829093,
+    "timestamp-ms" : 1776514160103,
+    "summary" : {
+      "operation" : "append",
+      "spark.app.id" : "local-1776499809098",
+      "spark.sql.streaming.epochId" : "4",
+      "spark.sql.streaming.queryId" : "03483a22-25ee-45f8-9375-f5d31189ca8f",
+      "added-data-files" : "1",
+      "added-records" : "210",
+      "added-files-size" : "11451",
+      "changed-partition-count" : "1",
+      "total-records" : "230",
+      "total-files-size" : "15631",
+      "total-data-files" : "2",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "file:/D:/Finance_Fraud_Detection/iceberg_warehouse/db/fraud_transactions/metadata/snap-4886759124782175681-1-3d9f0dc7-f7ca-4ad7-8a7e-085236e904de.avro",
+    "schema-id" : 0
+  } ],
+  "statistics" : [ ],
+  "partition-statistics" : [ ],
+  "snapshot-log" : [ {
+    "timestamp-ms" : 1776502189595,
+    "snapshot-id" : 3050500731298829093
+  }, {
+    "timestamp-ms" : 1776514160103,
+    "snapshot-id" : 4886759124782175681
+  } ],
+  "metadata-log" : [ {
+    "timestamp-ms" : 1776499815235,
+    "metadata-file" : "file:/D:/Finance_Fraud_Detection/iceberg_warehouse/db/fraud_transactions/metadata/v1.metadata.json"
+  }, {
+    "timestamp-ms" : 1776502189595,
+    "metadata-file" : "file:/D:/Finance_Fraud_Detection/iceberg_warehouse/db/fraud_transactions/metadata/v2.metadata.json"
+  } ]
+}

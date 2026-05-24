@@ -1,0 +1,91 @@
+{
+  "format-version" : 2,
+  "table-uuid" : "f2f6aaca-141e-41d8-9e67-691962f3c861",
+  "location" : "file:///D:/Finance_Fraud_Detection/iceberg_warehouse/db/fraud_transactions",
+  "last-sequence-number" : 0,
+  "last-updated-ms" : 1776499815235,
+  "last-column-id" : 11,
+  "current-schema-id" : 0,
+  "schemas" : [ {
+    "type" : "struct",
+    "schema-id" : 0,
+    "fields" : [ {
+      "id" : 1,
+      "name" : "step",
+      "required" : false,
+      "type" : "int"
+    }, {
+      "id" : 2,
+      "name" : "type",
+      "required" : false,
+      "type" : "string"
+    }, {
+      "id" : 3,
+      "name" : "amount",
+      "required" : false,
+      "type" : "double"
+    }, {
+      "id" : 4,
+      "name" : "nameOrig",
+      "required" : false,
+      "type" : "string"
+    }, {
+      "id" : 5,
+      "name" : "oldbalanceOrg",
+      "required" : false,
+      "type" : "double"
+    }, {
+      "id" : 6,
+      "name" : "newbalanceOrig",
+      "required" : false,
+      "type" : "double"
+    }, {
+      "id" : 7,
+      "name" : "nameDest",
+      "required" : false,
+      "type" : "string"
+    }, {
+      "id" : 8,
+      "name" : "oldbalanceDest",
+      "required" : false,
+      "type" : "double"
+    }, {
+      "id" : 9,
+      "name" : "newbalanceDest",
+      "required" : false,
+      "type" : "double"
+    }, {
+      "id" : 10,
+      "name" : "isFraud",
+      "required" : false,
+      "type" : "int"
+    }, {
+      "id" : 11,
+      "name" : "rule_fraud",
+      "required" : false,
+      "type" : "boolean"
+    } ]
+  } ],
+  "default-spec-id" : 0,
+  "partition-specs" : [ {
+    "spec-id" : 0,
+    "fields" : [ ]
+  } ],
+  "last-partition-id" : 999,
+  "default-sort-order-id" : 0,
+  "sort-orders" : [ {
+    "order-id" : 0,
+    "fields" : [ ]
+  } ],
+  "properties" : {
+    "owner" : "rsanj",
+    "write.parquet.compression-codec" : "zstd"
+  },
+  "current-snapshot-id" : -1,
+  "refs" : { },
+  "snapshots" : [ ],
+  "statistics" : [ ],
+  "partition-statistics" : [ ],
+  "snapshot-log" : [ ],
+  "metadata-log" : [ ]
+}

@@ -1,0 +1,16 @@
+# Virtual environment
+venv/
+
+# Spark checkpoints
+checkpoint/
+
+# Log files
+*.log
+
+# Dataset folders
+data/raw/
+data/processed/
+
+# Python cache
+__pycache__/
+.ipynb_checkpoints/
